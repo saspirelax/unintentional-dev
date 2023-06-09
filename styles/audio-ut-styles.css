@@ -1,9 +1,15 @@
-body {
+/* Audio Unit */
+.audioPlayer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    width: auto;
     background-color:cadetblue;
+    padding: 2vw;
+    border-radius: 4px;
 }
 
 /*Image Formatting*/
-
 .audioImage {
   position: relative;
   width: 114px;
