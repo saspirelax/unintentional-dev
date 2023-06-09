@@ -1,0 +1,17 @@
+body {
+    background-color:cadetblue;
+}
+
+/*Image Formatting*/
+
+.audioImage {
+  position: relative;
+  width: 114px;
+  height: 103px;
+  border-radius: 4px;
+  margin: 3%;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.53);
+}
+audioVolume {
+  box-orient:vertical;
+}
