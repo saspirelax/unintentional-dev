@@ -3,7 +3,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start; 
-    width: auto;
+    width: 20vw;
     background-color:cadetblue;
     padding: 2vw;
     border-radius: 4px;
@@ -20,4 +20,32 @@
 }
 audioVolume {
   box-orient:vertical;
+}
+
+ /*details*/
+ details {
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  padding: 0;
+  font-size: small;
+}
+
+summary {
+  font-weight: bold;
+  font-size: small;
+  margin: 0.5em;
+  padding: 0;
+}
+
+details[open] {
+  padding: 0.5em;
+}
+
+details[open] summary {
+  border-bottom: 1px solid #ffffff;
+  margin-bottom: 0.5em;
+}
+/* Unit Controls*/
+.audioVolume {
+  margin:1vw;
 }
