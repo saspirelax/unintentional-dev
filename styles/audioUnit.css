@@ -1,24 +1,21 @@
 /* Audio Unit*/
 .audioUnit {
     display: flex;
-    flex-direction: column-reverse;
-    align-items: 0;
+    flex-direction: row;
+    align-items: stretch;
     background-color:#8848A4;
     padding: 1vw;
     border-radius: 10px;
-    margin: 1vw;
-  
+    margin: 2vw;
+
 }
 
-/* Audio Unit Content child flex item */
+/* Audio Unit Content image and description child flex item */
 .audioUnit-content {
-  display: flex;
-  flex-direction: row;
-  align-items: 0;
   background-color: #BD84D6;
   padding: 2vw;
   border-radius: 5px;
-  width: 100%;
+  width: 85%;
 }
 
 /*Image Formatting*/
@@ -55,11 +52,20 @@ details[open] summary {
 }
 
 
-/* Volume Unit Controls*/      
+/* Volume Unit Controls*/  
+.audioUnit-volume {
+  background-color: #fd84d9;
+  margin: 1vw;
+  padding: 2vw;
+  width: 15%;
+  border-radius: 5px;
+}
+
 .slider {
+  /* Set width and height to adjust the size of the slider */
   width: 100%;
   height: 100%;
+  /* Rotate the slider vertically */
   transform: rotate(-90deg);
-  position: relative;
-  padding: 1vw;
+  /* Adjust other styling properties as needed */
 }
