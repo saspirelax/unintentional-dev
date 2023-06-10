@@ -1,0 +1,38 @@
+.masterAudioUnitControl {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    background-color:#8848A4;
+    padding: 1vw;
+    border-radius: 10px;
+    margin: 1vw;
+  }
+
+.controlerElement {
+    display:flex;
+    padding: 1vw;
+}
+
+.controlerElementImage{
+    display: flex;
+    border-radius: 15px;
+}
+
+.controlButton {
+    display: flex;
+    flex: 1;
+    width: 5vw;
+    margin: 1vw;
+}
+
+.play-button {
+    display: flex;
+}
+
+.controlInstructions {
+    display: flex;
+    flex: 2;
+    color: white;
+    padding: 2vw;
+    
+}
