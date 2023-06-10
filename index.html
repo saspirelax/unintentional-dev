@@ -1,24 +1,27 @@
 <!DOCTYPE html>
 <head>
+    <!-- -->
     <link rel="stylesheet" type="text/css" href="styles/sanitize.css">
+    <link rel="stylesheet" type="text/css" href="styles/general.css">
+    <!-- Audio Unit -->
+        <link rel="stylesheet" type="text/css" href="styles/audioUnit.css">
+    <!--Pure CSS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Pure Responsive -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/grids-responsive-min.css">
+
 </head>
 <body>
-    <link rel="stylesheet" type="text/css" href="styles/audio-ut-styles.css">
-    <link rel="stylesheet" type="text/css" href="styles/general-ut-styles.css">   
-    <div class="flexcontainer">
-        <div class="aboutSection audioPlayer">
-          <img class="audioImage" src=https://images.unsplash.com/photo-1491378630646-3440efa57c3b>
+<div class="pure-g" style="width: 100%">
+    <div class="audioUnit">
+        <div class="audioUnit-content pure-u-1-2">
+          <img class="audioImage" src=https://placehold.co/400>
           <p class="audioName">Sea shore</p>
           <p class="audioType">Stereo</p>
-          <input type="range" class="audioVolume">
           <details><summary>Description</summary><p>Sea-shore recorded in Felixstowe, UK. Recorded using stereo microphones attached to a clothes hangar.</p></details>
+        <div><input type="range" min="0" max="100" value="50" class="slider" id="volumeSlider"></div>
         </div>
-        <div class="aboutSection audioPlayer">
-            <img class="audioImage" src=https://images.unsplash.com/photo-1491378630646-3440efa57c3b>
-            <p class="audioName">Noisey</p>
-            <p class="audioType">Mono</p>
-            <input type="range" class="audioVolume">
-            <details><summary>Description</summary><p>Sea-shore recorded in Felixstowe, UK. Recorded using stereo microphones attached to a clothes hangar.</p></details>
-          </div>
     </div>
+</div>   
 </body>

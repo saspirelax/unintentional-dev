@@ -1,0 +1,65 @@
+/* Audio Unit*/
+.audioUnit {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: 0;
+    background-color:#8848A4;
+    padding: 1vw;
+    border-radius: 10px;
+    margin: 1vw;
+  
+}
+
+/* Audio Unit Content child flex item */
+.audioUnit-content {
+  display: flex;
+  flex-direction: row;
+  align-items: 0;
+  background-color: #BD84D6;
+  padding: 2vw;
+  border-radius: 5px;
+  width: 100%;
+}
+
+/*Image Formatting*/
+.audioImage {
+  position: relative;
+  width: 100%;
+  border-radius: 4px;
+  margin: 0vw;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.53);
+}
+
+ /*details*/
+ details {
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  padding: 0;
+  font-size: small;
+}
+
+summary {
+  font-weight: bold;
+  font-size: small;
+  margin: 0.5vw;
+  padding: 0;
+}
+
+details[open] {
+  padding: 0.5vw;
+}
+
+details[open] summary {
+  border-bottom: 1px solid #ffffff;
+  margin-bottom: 0.5vw;
+}
+
+
+/* Volume Unit Controls*/      
+.slider {
+  width: 100%;
+  height: 100%;
+  transform: rotate(-90deg);
+  position: relative;
+  padding: 1vw;
+}
