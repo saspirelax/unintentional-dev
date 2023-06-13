@@ -77,7 +77,7 @@ Includes image and description */
     /* Remove default styling */
     appearance: none;
     -webkit-appearance: none;
-    border: solid;
+    border: none;
     background-color: #D65FB3;
     writing-mode: bt-lr; /*Set the writing mode to vertical*/
     opacity: 0.7;
@@ -86,7 +86,7 @@ Includes image and description */
     transform: rotate(90deg);
     width: 15rem;
   
-    border-radius: 5px;
+    border-radius: 1rem;
    
     /* aspect-ratio: 3/1; */
 
