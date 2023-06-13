@@ -5,7 +5,7 @@
     <link rel="stylesheet" type="text/css" href="styles/general.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/base-min.css">
     <!-- Audio Unit -->
-        <link rel="stylesheet" type="text/css" href="styles/audioUnit.css">
+        <!-- <link rel="stylesheet" type="text/css" href="styles/audioUnit.css"> -->
         <link rel="stylesheet" type="text/css" href="styles/audioUnit-content.css">
         <link rel="stylesheet" type="text/css" href="styles/masterAudioControl.css">
     <!--Pure CSS-->
@@ -28,7 +28,7 @@
             </div>
             <div class="audioUnit-volume">
                 <p style="size: small;">high</p>
-                    <input type="range" min="0" max="100" value="50" class="custom-slider" id="volumeSlider">
+                    <input type="range" min="0" max="100" value="50" class="custom-slider" id="#volslide01">
                 <p style="size: small;">low</p>   
             </div>
             <!-- audio file test -->
@@ -62,8 +62,8 @@
         <div class="audioUnit">
             <div class="audioUnit-content">
             <img class="audioImage" src=https://placehold.co/400>
-            <p class="audioName">Sea shore</p>
-            <p class="audioType">Stereo</p>
+            <p class="audioName">Sea Shore</p>
+            <p class="audioType">Stereo FLAC</p>
             <details><summary>Description</summary><p>Sea-shore recorded in Felixstowe, UK. Recorded using stereo microphones attached to a clothes hangar.</p></details>
             </div>
             <div class="audioUnit-volume">
@@ -96,7 +96,7 @@
             <div class="controlerElement">
                 <img class="controlButton pause-button" src="media/icons/pause-icon.svg" alt="pause-button" aria-label="pause-button">
                 <img class="controlButton play-button" src="media/icons/play-icon.svg" alt="play-button" aria-label="play-button">
-                <script src="au-control.js"></script>
+                <script src="script/au-control.js"></script>
                 <!-- <script src="webAudio.js"></script> -->
             <p class="controlInstructions">press play or pause</p>
             </div>

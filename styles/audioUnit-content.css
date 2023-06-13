@@ -60,7 +60,7 @@ Includes image and description */
   /* CHILD 2 - Pink Volume Container*/  
 .audioUnit-volume {
     order: 2;
-    background-color: #fd84d9;
+    background-color: #D65FB3;
     padding: 0vw;
     border-radius: 5px;
     width: 20%;
@@ -79,7 +79,7 @@ Includes image and description */
     appearance: none;
     -webkit-appearance: none;
     border: none;
-    background-color: #D65FB3;
+    background-color: #FD84D9;
     writing-mode: bt-lr; /*Set the writing mode to vertical*/
     opacity: 0.7;
     -webkit-transition: .2s;
@@ -103,16 +103,16 @@ Includes image and description */
   appearance: none;
   width: 2rem; /* Set a specific slider handle width */
   height: 2rem; /* Slider handle height */
-  background: #D3B41E; /*background */
+  background: #ffffff; /*background */
   cursor: pointer; /* Cursor on hover */
-  border: 1px solid black;
-  border-radius: 5px;
+  border: 1px solid rgb(99, 99, 99);
+  border-radius: 50%;
   
 }
 
 .custom-slider::-moz-range-thumb {
-  width: 6vw; /* Set a specific slider handle width */
-  height: 4vw; /* Slider handle height */
+  width: 2rem; /* Set a specific slider handle width */
+  height: 2rem; /* Slider handle height */
   background: #D3B41E; /* Green background */
   cursor: pointer; /* Cursor on hover */
 }
