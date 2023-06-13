@@ -63,7 +63,8 @@ Includes image and description */
     background-color: #fd84d9;
     padding: 0vw;
     border-radius: 5px;
-    width: 18%;
+    width: 20%;
+   
       display: flex;
       align-items: center;
       flex-direction: column;
@@ -84,7 +85,7 @@ Includes image and description */
     -webkit-transition: .2s;
     transition: opacity.2s;
     transform: rotate(90deg);
-    width: 15rem;
+    width: 450%;
   
     border-radius: 1rem;
    
