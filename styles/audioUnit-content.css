@@ -42,25 +42,35 @@
   }
   
   
-  /* Volume Unit Controls*/  
+  /* Volume Container*/  
   .audioUnit-volume {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     background-color: #fd84d9;
     margin-left: 1vw;
     padding: 2vw;
     width: 15%;
     border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
   }
   
-  .slider {
-    /* Set width and height to adjust the size of the slider */
-    width: 2vw;
-    height: 100%;
-    /* Rotate the slider vertically */
-      /* transform: rotate(-90deg); */
-    /* Adjust other styling properties as needed */
+/*   
+/*SLIDER*/
+
+  .custom-slider {
+    /* Remove default styling */
+    appearance: none;
+    -webkit-appearance: none;
+    border: none;
+    background-color: green;
+    width: 40vw;
+    height: 2vw;
     writing-mode: bt-lr; /* Set the writing mode to vertical */
-    appearance: slider-vertical;
+    transform: rotate(90deg);
+    
+
   }
+  
+  
+  
