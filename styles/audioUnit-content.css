@@ -1,13 +1,3 @@
-/* Audio Unit Content image and description child flex item */
-.audioUnit-content {
-    display: flex;
-    flex-direction: column;
-    background-color: #BD84D6;
-    padding: 1vw;
-    border-radius: 5px;
-    width: 85%;
-  }
-  
   /*Image Formatting*/
   .audioImage {
     position: relative;
@@ -40,37 +30,89 @@
     border-bottom: 1px solid #ffffff;
     margin-bottom: 0.5vw;
   }
-  
-  
-  /* Volume Container*/  
-  .audioUnit-volume {
+
+ /* MAIN - General Flex Container*/
+.audioUnit {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: space-between;
+  background-color:#8848A4;
+  padding: 1vw;
+  border-radius: 10px;
+  margin: 1vw;
+}
+
+/* CHILD 1 - Lighter purple container 
+Includes image and description */
+.audioUnit-content {
+  order: 1;
+  background-color: #BD84D6;
+  padding: 1vw;
+  border-radius: 5px;
+/*flexing next*/
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 78%;
+}
+
+  /* CHILD 2 - Pink Volume Container*/  
+.audioUnit-volume {
+    order: 2;
     background-color: #fd84d9;
-    margin-left: 1vw;
-    padding: 2vw;
-    width: 15%;
+    padding: 0vw;
     border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    width: 18%;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: space-between;
+      /* aspect-ratio: 1/2; */
 
-  }
-  
-/*   
-/*SLIDER*/
+}
 
-  .custom-slider {
+/* CHILD 2.2*/
+.custom-slider {
     /* Remove default styling */
     appearance: none;
     -webkit-appearance: none;
-    border: none;
-    background-color: green;
-    width: 40vw;
-    height: 2vw;
-    writing-mode: bt-lr; /* Set the writing mode to vertical */
+    border: solid;
+    background-color: #D65FB3;
+    writing-mode: bt-lr; /*Set the writing mode to vertical*/
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity.2s;
     transform: rotate(90deg);
-    
+    width: 15rem;
+  
+    border-radius: 5px;
+   
+    /* aspect-ratio: 3/1; */
 
   }
   
+  .custom-slider:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+  }
   
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.custom-slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 2rem; /* Set a specific slider handle width */
+  height: 2rem; /* Slider handle height */
+  background: #D3B41E; /*background */
+  cursor: pointer; /* Cursor on hover */
+  border: 1px solid black;
+  border-radius: 5px;
   
+}
+
+.custom-slider::-moz-range-thumb {
+  width: 6vw; /* Set a specific slider handle width */
+  height: 4vw; /* Slider handle height */
+  background: #D3B41E; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
+

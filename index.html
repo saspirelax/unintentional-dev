@@ -3,6 +3,7 @@
     <!-- -->
     <link rel="stylesheet" type="text/css" href="styles/sanitize.css">
     <link rel="stylesheet" type="text/css" href="styles/general.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/base-min.css">
     <!-- Audio Unit -->
         <link rel="stylesheet" type="text/css" href="styles/audioUnit.css">
         <link rel="stylesheet" type="text/css" href="styles/audioUnit-content.css">
@@ -16,6 +17,7 @@
 </head>
 <body>
 <div class="pure-g">
+    <!-- Audio Unit -->
     <div id="audio-unit1" class="pure-u-1-2 pure-u-sm-1-2 pure-u-md-1-3 pure-u-lg-1-4">
         <div class="audioUnit">
             <div class="audioUnit-content">
@@ -24,14 +26,18 @@
             <p class="audioType">Stereo</p>
             <details><summary>Description</summary><p>Sea-shore recorded in Felixstowe, UK. Recorded using stereo microphones attached to a clothes hangar.</p></details>
             </div>
-            <div class="audioUnit-volume"> 
-                <input type="range" min="0" max="100" value="50" class="custom-slider" id="volumeSlider1">
+            <div class="audioUnit-volume">
+                <p style="size: small;">high</p>
+                    <input type="range" min="0" max="100" value="50" class="custom-slider" id="volumeSlider">
+                <p style="size: small;">low</p>   
             </div>
             <!-- audio file test -->
             <audio id="#audio1" src="media/ut-audio/synthloop1-test.wav" loop></audio>
             <!-- audio file test -->
         </div>
     </div>
+    <!-- End Audio Unit -->
+    <!-- Audio Unit -->
     <div id="audio-unit2" class="pure-u-1-2 pure-u-sm-1-2 pure-u-md-1-3 pure-u-lg-1-4">
         <div class="audioUnit">
             <div class="audioUnit-content">
@@ -40,14 +46,18 @@
             <p class="audioType">Stereo</p>
             <details><summary>Description</summary><p>Sea-shore recorded in Felixstowe, UK. Recorded using stereo microphones attached to a clothes hangar.</p></details>
             </div>
-            <div class="audioUnit-volume"> 
-                <input type="range" min="0" max="100" value="50" class="custom-slider" id="volumeSlider">
+            <div class="audioUnit-volume">
+                <p style="size: small;">high</p>
+                    <input type="range" min="0" max="100" value="50" class="custom-slider" id="volumeSlider">
+                <p style="size: small;">low</p>   
             </div>
             <!-- audio file test -->
             <audio id="#audio2" src="media/ut-audio/paperloop-test.wav" loop></audio>
             <!-- audio file test -->
         </div>
     </div>
+    <!-- End Audio Unit -->
+    <!-- Audio Unit -->
     <div id="audio-unit3" class="pure-u-1-2 pure-u-sm-1-2 pure-u-md-1-3 pure-u-lg-1-4">
         <div class="audioUnit">
             <div class="audioUnit-content">
@@ -56,11 +66,31 @@
             <p class="audioType">Stereo</p>
             <details><summary>Description</summary><p>Sea-shore recorded in Felixstowe, UK. Recorded using stereo microphones attached to a clothes hangar.</p></details>
             </div>
-            <div class="audioUnit-volume"> 
-                <input type="range" min="0" max="100" value="50" class="custom-slider" id="volumeSlider">
+            <div class="audioUnit-volume">
+                <p style="size: small;">high</p>
+                    <input type="range" min="0" max="100" value="50" class="custom-slider" id="volumeSlider">
+                <p style="size: small;">low</p>   
             </div>
         </div>
     </div>
+    <!-- End Audio Unit -->
+    <!-- Audio Unit -->
+    <div id="audio-unit4" class="pure-u-1-2 pure-u-sm-1-2 pure-u-md-1-3 pure-u-lg-1-4">
+        <div class="audioUnit">
+            <div class="audioUnit-content">
+                <img class="audioImage" src=https://placehold.co/400>
+                <p class="audioName">Sea shore</p>
+                <p class="audioType">Stereo</p>
+                <details><summary>Description</summary><p>Sea-shore recorded in Felixstowe, UK. Recorded using stereo microphones attached to a clothes hangar.</p></details>
+            </div>
+                <div class="audioUnit-volume">
+                    <p style="size: small;">high</p>
+                        <input type="range" min="0" max="100" value="50" class="custom-slider" id="volumeSlider">
+                    <p style="size: small;">low</p>   
+                </div>
+        </div>
+    </div>
+    <!-- End Audio Unit -->
     <div id="audio-controls" class="pure-u-1-2 pure-u-sm-1-2 pure-u-md-1-3 pure-u-lg-1-4">
         <div class="masterAudioUnitControl">
             <div class="controlerElement">
@@ -71,21 +101,6 @@
             <p class="controlInstructions">press play or pause</p>
             </div>
         </div>
-    </div> 
-    <div id="audio-unit3" class="pure-u-1-2 pure-u-sm-1-2 pure-u-md-1-3 pure-u-lg-1-4">
-        <div class="audioUnit">
-            <div class="audioUnit-content">
-            <img class="audioImage" src=https://placehold.co/400>
-            <p class="audioName">Sea shore</p>
-            <p class="audioType">Stereo</p>
-            <details><summary>Description</summary><p>Sea-shore recorded in Felixstowe, UK. Recorded using stereo microphones attached to a clothes hangar.</p></details>
-            </div>
-            <div class="audioUnit-volume"> 
-                <input type="range" min="0" max="100" value="50" class="custom-slider" id="volumeSlider">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>      
+    </div>       
 </div>
 </body>

@@ -1,12 +1,11 @@
-/* Audio Unit*/
+/* Audio Unit - General Flex Container
 .audioUnit {
     display: flex;
     flex-direction: row;
-    align-items:stretch;
     background-color:#8848A4;
     padding: 1vw;
     border-radius: 10px;
     margin: 1vw;
-
+    align-items: stretch;
 }
-
+ */
