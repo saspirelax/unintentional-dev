@@ -24,8 +24,9 @@ pauseButton.addEventListener('click', function() {
 //volume control 1
 
 const volumeSlider = document.getElementById('#volslide01');
+volumeSlider.value = 50; // Set the initial value of the volume slider to 50
 
-volumeSlider.addEventListener('input', function(range) {
+volumeSlider.addEventListener('input', function() {
   const volume = volumeSlider.value / 100; // Convert the range slider value to a decimal between 0 and 1
   audioElement.volume = volume; // Set the volume of the audio element
 });
